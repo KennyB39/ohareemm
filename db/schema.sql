@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS commerece_db;
+CREATE DATABASE commerce_db;
