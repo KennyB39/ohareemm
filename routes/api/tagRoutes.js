@@ -44,4 +44,13 @@ router.get('/', (req, res) => {
           });
         });
 
-        
+ router.post('/', (req, res) =>{
+    Tag.create({
+        tagName: req.body.tagName,
+    })
+    .then(tagData => res.json(tagData))
+    .catch(err => {
+        console.log(err);
+        res.status(500).json
+    });
+ });       
