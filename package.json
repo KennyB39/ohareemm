@@ -8,16 +8,13 @@
     "start": "node server.js",
     "seed": "node seeds/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/charlottearichard/13.Ecommerce.git"
-  },
+  }
   "author": "Charlotte A. Ri'Chard",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/charlottearichard/13.Ecommerce/issues"
+   
   },
-  "homepage": "https://github.com/charlottearichard/13.Ecommerce#readme",
+  
   "dependencies": {
     "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
