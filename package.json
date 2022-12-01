@@ -1,25 +1,29 @@
 {
-  "name": "library-api",
+  "name": "OHAREEMM",
   "version": "1.0.0",
-  "description": "",
+  "description": "E-commerce challenege",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node server.js",
-    "watch": "nodemon server.js",
-    "seed": "node seeds/seed.js"
+    "seed": "node seeds/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlottearichard/13.Ecommerce.git"
+  },
+  "author": "Charlotte A. Ri'Chard",
   "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^5.0.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.18.1",
-    "mysql2": "^2.2.1",
-    "sequelize": "^6.3.5"
+  "bugs": {
+    "url": "https://github.com/charlottearichard/13.Ecommerce/issues"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
+  "homepage": "https://github.com/charlottearichard/13.Ecommerce#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.3",
+    "sqlite3": "^5.0.9"
   }
 }
