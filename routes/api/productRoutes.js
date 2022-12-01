@@ -1,4 +1,5 @@
 const router = require('express').Router();
+
 import { Product, Category, Tag, ProductTag } from '../../models';
 
 router.get('/', (req, res) => {
@@ -119,4 +120,3 @@ router.delete('/:id', (req, res) => {
     });
 });
 
-export default router;
