@@ -1,4 +1,4 @@
-const { Model, DataTypes } = Require ('sequalize');
+const { Model, DataTypes } = require ('sequalize');
 const sequalize = require('../config/connections');
 
 class Category extends Model {}
