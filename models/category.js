@@ -1,12 +1,12 @@
-const { Model, DataTypes } = require ('sequalize');
-const sequalize = require('../config/connections');
+const { Model, DataTypes } = require ('sequelize');
+const sequelize = require('../config/connections');
 
 class Category extends Model {}
 
 Category.init(
     {
         id: {
-            tyoe: DataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             AutoIncrement: true
@@ -17,11 +17,11 @@ Category.init(
         }
     },
     {
-        sequalize,
+        sequelize,
         timestamp: false,
         freezetableName: true,
         modelName: 'category'
     }
 );
 
-moodule.expoorts = Category
+module.exports = Category;
