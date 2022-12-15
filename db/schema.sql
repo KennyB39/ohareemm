@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS commerece_db;
-CREATE DATABASE commerce_db;
+DROP DATABASE IF EXISTS library_db;
+CREATE DATABASE library_db;

@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-import { Product, Category, Tag, ProductTag } from '../../models';
+const { Product, Category, Tag, ProductTag } = require ('../../models');
 
 router.get('/', (req, res) => {
   Product.findAll({
@@ -46,6 +46,7 @@ router.get('/:id', (req, res) => {
 
 });
 
+router.post('/', (req, res) => {
 Product.create(req.body)
   .then((product) => {
     if (req.body.tagIds.length) {
@@ -64,6 +65,7 @@ Product.create(req.body)
     console.log(err);
     res.status(400).json(err);
   });
+});
 
 
 router.put('/:id', (req, res) => {
