@@ -6,7 +6,7 @@ Product.init(
     {
         id: {
             type: DataTypes.INTEGER,
-            allowNul: false,
+            // allowNull: false,
             primaryKey: true, 
             autoIncrement: true, 
           },
